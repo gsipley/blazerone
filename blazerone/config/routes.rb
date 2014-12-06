@@ -1,10 +1,12 @@
-# resources: pages
-
 Rails.application.routes.draw do
- 
-  get 'pages/welcome'
 
-  get 'pages/about' 
+  root 'pages#welcome'
+  get 'pages/welcome'
+  get 'pages/about'
+  get 'diagnostics/new'
+
+  resources :diagnostics
+
 
  
 
