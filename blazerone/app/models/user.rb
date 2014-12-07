@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
 
-	def new
-		@user = User.new
-	end
+	validates :first_name, presence: true
+	validates :last_name, presence: true
+	validates :email, presence: true
+	has_one :diagnostic
 
 end
