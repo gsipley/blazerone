@@ -1,6 +1,7 @@
 class Diagnostic < ActiveRecord::Base
 
 	# validates :user_id, presence: true
+	# comment
 	belongs_to :user
 	
 def diagnostic_score
