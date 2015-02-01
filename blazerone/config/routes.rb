@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   root 'pages#welcome'
   get 'pages/welcome'
   get 'pages/about'
+  get 'pages/continue'
   get 'diagnostics/new'
+  get 'signup', to: 'users#new'
 
+  resources :users
   resources :diagnostics
 
 

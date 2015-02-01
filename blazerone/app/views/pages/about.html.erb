@@ -1,6 +1,4 @@
 
-<h1>About Blazer</h1>
-
 <!-- <h1>Pages#about</h1> -->
 <!-- <p>Find me in app/views/pages/about.html.erb</p>
  -->
@@ -8,7 +6,11 @@
 <h1>What is Blazer?</h1>
 <br>Blazer is a series of writing conferences that determine the exercises that will best prepare you to think like a writer.<br><br>
 Developed by two teachers who have dedicated their lives to assisting students of all ages and abilities, Blazer helps you find your voice.<br><br>
-<%= link_to('Take a writing diagnostic', diagnostics_new_path) %>
+</br>
+<%= link_to('Sign up', signup_path, class: "btn btn-lg btn-primary") %>
+</br>
 <br>
 <br>
-<p>(Find me in app/views/pages/about.html.erb)</p>
+Or take a <%= link_to('writing diagnostic', pages_continue_path) %>.
+
+
